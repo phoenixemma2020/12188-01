@@ -1,0 +1,142 @@
+Title: Error
+Date/Time: 31122024-160524
+Message: Client found response content type of 'text/html; charset=utf-8', but expected 'text/xml'.
+The request failed with the error message:
+--
+Error Query [UPDATE pptlabvalues SET
+                        PatientID = '6301540029',
+                        CN = '01546300031',
+                        CNDT = '20200713202912',
+                        LabDate = '16/04/2020',
+                        MethodID = '1',
+                        LabMinMaxID = '0',
+                        LabUnit = '1',
+                        FPG = '',
+                        FPGUnit = '1',
+                        HbA1c = '',
+                        HbA1cUnit = '',
+                        Cr = '5.43',
+                        CrUnit = '1',
+                        UricAcid = '',
+                        UricAcidUnit = '1',
+                        NaPlus = '136',
+                        NaPlusUnit = '1',
+                        KPlus = '5.5',
+                        KPlusUnit = '1',
+                        ClMinus = '100',
+                        ClMinusUnit = '1',
+                        HCO3Minus = '22',
+                        HCO3MinusUnit = '1',
+                        Ca2Plus = '',
+                        Ca2PlusUnit = '1',
+                        PO42Minus = '',
+                        PO42MinusUnit = '1',
+                        iPTH = '',
+                        iPTHUnit = '1',
+                        ALP = '',
+                        ALPUnit = '1',
+                        Alb = '',
+                        AlbUnit = '1',
+                        TotalProtein = '',
+                        TotalProteinUint = '1',
+                        TotalCholesterol = '',
+                        TotalCholesterolUnit = '1',
+                        Triglyceride = '',
+                        TriglycerideUnit = '1',
+                        HDLc = '',
+                        HDLcUnit = '1',
+                        LDLc = '',
+                        LDLcUnit = '1',
+                        Hct = '30.6',
+                        HctUnit = '',
+                        Hb = '10.6',
+                        HbUnit = '1',
+                        SerumIron = '',
+                        SerumIronUnit = '1',
+                        TIBC = '',
+                        TIBCUnit = '1',
+                        Ferritin = '',
+                        FerritinUnit = '1',
+                        TSAT = '',
+                        TSATUnit = '',
+                        HBsAg = '0',
+                        HBsAgOther = '',
+                        AntiHBs = '0',
+                        AntiHBsOther = '',
+                        AntiHBc = '0',
+                        AntiHBcOther = '',
+                        AntiHCV = '0',
+                        AntiHCVOther = '',
+                        AntiHIV = '0',
+                        AntiHIVOther = '',
+                        EKG = '2',
+                        EKGOther = 'LVH',
+                        XRAY = '2',
+                        XRAYOther = 'Mild  cardiomegaly\',
+                        FidUser = '01540001',
+                        FirstDate = '13/07/2020',
+                        FirstTime = '202909',
+                        LidUser = '01540001',
+                        LastDate = '22/09/2021',
+                        LastTime = '190822',
+                        CidUser = '',
+                        CancelDate = '',
+                        CancelTime = '',
+                        sStatus = '1',
+                        SidUser = '01540001',
+                        SyncDate = '31/12/2024',
+                        SyncTime = '160524',
+                        SyncServer = '2'
+                    WHERE PatientID = '6301540029' AND CN = '01546300031' AND CNDT = '20200713202912']
+--.
+ErrorSQL: 
+ErrorLine: 10118
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at TRTSystem.frmSRData.SendPT4_1ToServer(String sCenterID) in D:\VB2019\TRTSystem\TRTSystem\frmSRData.vb:line 10171
+   at TRTSystem.frmSRData.SendPT4ToServer(String sCenterID) in D:\VB2019\TRTSystem\TRTSystem\frmSRData.vb:line 9858
+   at TRTSystem.frmSRData.DoWork() in D:\VB2019\TRTSystem\TRTSystem\frmSRData.vb:line 1430
+   at TRTSystem.frmSRData.btnSendata_Click(Object sender, EventArgs e) in D:\VB2019\TRTSystem\TRTSystem\frmSRData.vb:line 124
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at TRTSystem.frmMain.mnuSendData_Click(Object sender, EventArgs e) in D:\VB2019\TRTSystem\TRTSystem\frmMain.vb:line 588
+   at System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   at System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   at System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun()
+   at Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoApplicationModel()
+   at Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(String[] commandLine)
+   at TRTSystem.My.MyApplication.Main(String[] Args) in :line 83
+================================================

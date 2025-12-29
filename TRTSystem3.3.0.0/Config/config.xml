@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--NephroThai or Center-->
+<!--database config-->
+<configs>
+  <location>2</location>
+  <path>D:\DATA\TRT\12188-01\TRTSystem3.3.0.0\Database</path>
+  <filename>0154TRTDatabase.mdb</filename>
+  <centerid>0154</centerid>
+  <centername>ทักษิณ</centername>
+</configs>
